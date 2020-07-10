@@ -1,0 +1,349 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+/* relativ meretezes beallitas */
+	@media screen and (min-width: 2001px) {
+		html, body {
+			font-size: 40px;
+			}
+		.kontener {
+			width: 40rem;
+			}
+		.oszlop {
+			width: 30%;
+			text-align: center;
+			display: inline-block;
+			}	
+		}
+	@media screen and (max-width: 2000px) {
+		html, body {
+			font-size: 30px;
+			}
+		.kontener {
+			width: 40rem;
+			}
+		.oszlop {
+			width: 30%;
+			display: inline-block;
+			text-align: center;
+			}	
+		}
+	@media screen and (max-width: 1600px) {
+		html, body {
+			font-size: 28px;
+			}
+		.kontener {
+			width: 40rem;
+			}
+		.oszlop {
+			width: 30%;
+			display: inline-block;
+			text-align: center;
+			}	
+		}
+	@media screen and (max-width: 1200px) {
+		html, body {
+			font-size: 25px;
+			}
+		.kontener {
+			width: 40rem;
+			}
+		.oszlop {
+			width: 30%;
+			display: inline-block;
+			text-align: center;
+			}	
+		}
+	@media screen and (max-width: 1000px) {
+		html, body {
+			font-size: 20px;
+			}
+		.kontener {
+			width: 40rem;
+			}
+		.oszlop {
+			width: 30%;
+			display: inline-block;
+			text-align: center;
+			}	
+		}
+		
+	@media screen and (max-width: 850px) {
+		html, body {
+			font-size: 20px;
+			}
+		.kontener {
+			width: 100%;
+			}
+		.oszlop {
+			width: 100%;
+			text-align: center;
+			}	
+		}	
+	@media screen and (max-width: 768px) {
+		html, body {
+			font-size: 18px;
+			}
+		.kontener {
+			width: 100%;
+			}	
+		.oszlop {
+			width: 100%;
+			text-align: center;
+			}	
+		}
+	@media screen and (max-width: 640px) {
+		html, body {
+			font-size: 16px;
+			}
+		.kontener {
+			width: 100%;
+			}	
+		.oszlop {
+			width: 100%;
+			text-align: center;
+			}	
+		}		
+	@media screen and (max-width: 480px) {
+		html, body {
+			font-size: 12px;
+			}
+		.kontener {
+			width: 100%;
+			}	
+		.oszlop {
+			width: 100%;
+			text-align: center;
+			}	
+		}
+	@media screen and (max-width: 360px) {
+		html, body {
+			font-size: 9px;
+			}
+		.kontener {
+			width: 100%;
+			}	
+		.oszlop {
+			width: 100%;
+			text-align: center;
+			}	
+		}	
+		
+	.vkozepre{
+		position:absolute;
+		left:50%;
+		margin-right:-50%;
+		-webkit-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+	    transform: translate(-50%, 0);
+		}
+	.fkozepre{
+		position:absolute;
+		top:50%;
+		margin-bottom:-50%;
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+		-o-transform: translate(0, -50%);
+		transform:translate(0,-50%);
+		}
+	.vfkozepre{
+		position:absolute;
+		top:50%;
+		margin-bottom:-50%;
+		left:50%;
+		margin-right:-50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform:translate(-50%,-50%);
+		text-align:center;
+		}
+	.lentkozepre{
+			position:absolute;
+			margin-top: 100%;
+			margin-bottom: 0;
+			left:50%;
+			margin-right:-50%;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform:translate(-50%,-50%);
+			text-align:center;
+			}		
+	.vkozep{
+		position:relative;
+		left:50%;
+		margin-right:-50%;
+		-webkit-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+		transform:translate(-50%,0);
+		}
+	.fkozep{
+		position:relative;
+		top:50%;
+		margin-bottom:-50%;
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+		-o-transform: translate(0, -50%);
+		transform:translate(0,-50%);
+		}
+	.vfkozep{
+		position:relative;
+		top:50%;
+		margin-bottom:-50%;
+		left:50%;
+		margin-right:-50%;
+		transform:translate(-50%,-50%);
+		text-align:center;
+		}
+	.lentkozep {
+			position:relative;
+			//top:90%;
+			margin-bottom: -20px;
+			left:50%;
+			margin-right:-50%;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform:translate(-50%,-50%);
+			text-align:center;
+			}	
+	.lentre {
+			position:relative;
+			//top:100%;
+			margin-bottom: 0%;
+			left:50%;
+			margin-right:-50%;
+			-webkit-transform: translate(-50%, -100%);
+			-moz-transform: translate(-50%, -100%);
+			-ms-transform: translate(-50%, -100%);
+			-o-transform: translate(-50%, -100%);
+			transform:translate(-50%, -100%);
+			text-align:center;
+			}	
+
+/* altalanos beallitas */
+h1 {
+	font-family: "Great Vibes", Arial;
+	font-size: 3rem; /*6/2*/
+	font-weight: bolder;
+}
+h2 {
+	font-family: "Great Vibes", Arial;
+	font-size: 2rem;  /*6/3*/
+	font-weight: bolder;
+}
+h3 {
+	font-family: "Libre Baskerville", Arial;
+	font-size: 1.2rem;  /*6/5*/
+	font-weight: bold;
+}
+h4 {
+	font-family: "Libre Baskerville", Arial;
+	font-size: 1rem;  /*6/6*/
+	font-weight: bold;
+}
+h5 {
+	font-family: "Muli", Arial;
+	font-size: 0.75rem;  /*6/8*/
+	font-weight: bold;
+}
+h6 {
+	font-family: "Muli", Arial;
+	font-size: 0.6rem;  /*6/10*/
+	font-weight: bold;
+}
+
+	.vastag {
+		 font-weight: bold;
+		 }
+	a {
+		text-decoration: none;
+		}
+	.keretpiros {
+		border: 1px solid #ff1010;
+		}
+	.keretkek {
+		border: 1px solid blue;
+		}	
+	.keretzold {
+		border: 1px solid green;
+		}		
+	.keretlila {
+		border: 1px solid magenta;
+		}	
+	.keretpiros {
+		border: 1px solid red;
+		}	
+	.keretsarga {
+		border: 1px solid yellow;
+		}
+	.keretszurke {
+		border: 1px solid rgb(192,192,192);
+		}	
+	.vastag {
+		font-weight: bold;
+		}
+	.vonal {
+		width:80%;
+		margin:5px;
+		//margin-button:10px;
+		margin-left:10%;
+		border: 1px solid rgb(128,128,128);
+		}	
+			
